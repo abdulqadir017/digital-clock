@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    background: rgba(255, 255, 255, 0.1);
+    /* halki transparency */
+    padding: 40px 60px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    /* shadow */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #a1ecdd;
+    /* neon cyan */
+    font-size: 64px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px #92d4c6;
+
+}
+
+div {
+    width: 320px;
+    height: 100px;
+    background-color:#2c5364;
+    animation: myAnimation 2s linear infinite
+}
+
+
+@keyframes myAnimation {
+    from {
+        background-color: #2c5364;
+    }
+
+    to {
+        background-color: rgb(28, 155, 134);
+    }
+}
